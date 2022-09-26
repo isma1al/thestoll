@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thestoll</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div class="modal">
+        <div class="modal__content">
+            <h2>Забронировать столик</h2>
+            <span class="close__btn">
+                <img src="img/close.svg" alt="close">
+            </span>
+            <form action="telegram.php" method="POST">
+                <div class="one__column">
+                    <input required placeholder="Имя" class="name__input" name="userName" type="text">
+                    <input required placeholder="Кол-во людей" class="number__people" name="numberPeople" type="number">
+                </div>
+                <div class="two__column">
+                    <input required placeholder="Дата" class="date__input" name="dateInput" type="date">  
+                    <input required placeholder="Время" class="time__input" name="timeInput" type="time">
+                </div>
+                <input placeholder="Номер телефона" class="phone__input" type="text" name="phone">
+                <button type="submit">Забронировать</button>
+            </form>
+        </div>
+    </div>
+    <div class="menu">
+        <ul class="menu__list">
+            <li class="menu__list-item"><a href="about.html" class="menu__list-link">О нас</a></li>
+            <li class="menu__list-item"><a href="#" class="menu__list-link">Анонсы</a></li>
+            <li class="menu__list-item"><a href="restaurants.html" class="menu__list-link">Рестораны</a></li>
+            <li class="menu__list-item"><a href="stock.html" class="menu__list-link">Акции</a></li>
+            <li class="menu__list-item"><a href="#" class="menu__list-link">Программа лояльности</a></li>
+        </ul>
+        <a href="#" class="politik">Политика конфиденциальности</a>
+    </div>
+    <div class="container">
+        <div class="head rest__head">
+            
+            <a href="#" class="logo"><img src="img/logo.svg" alt="logoImg"></a>
+            <div class="head__block">
+                <a href="#" class="social__link"><img src="img/social/telegram.svg" alt=""></a>
+                <a href="#" class="social__link"><img src="img/social/vk.svg" alt=""></a>
+                <a href="#" class="social__link"><img src="img/social/phone.svg" alt=""></a>
+                <div class="burger__menu">Меню</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="rest__inner">
+            <div class="rest__item">
+                <h3><span>THESTOLL</span> Гастропаб</h3>
+                <div class="rest__item-inner">
+                    <div class="rest__item-left__content">
+                        <p>Мясо из Техасского смокера, 18 видов настоящей римской пиццы, авторские настойки и холодное пенное! THESTOLL – новая ресторанная сеть в 
+                            Санкт-Петербурге.</p>
+                            <a href="#" class="btn__menu rest__btn">Основное меню</a>
+                            <a href="#" class="btn__bar rest__btn">Бар</a>
+                            <span class="address">Пр. Энгельса, 124, к.1 
+                                ТЦ Вояж</span>
+                            <h5>Режим работы</h5>
+                            <span class="working__time">ВС-ЧТ 11:00 - 23:00</span>
+                            <span class="working__time">ПТ-СБ 11:00 - 00:00</span>
+                            <a href="tel:+79319999656" class="rest__item-phone">+7 (931) 9999 656</a>
+                    </div>
+                    <div class="rest__item-right__content">
+                        <div class="rest__item-slider">
+                            <div class="rest__img-block swiper-slide">
+                                <img width="293" height="233" src="img/about/rest/gastr.png" alt="">
+                            </div>
+                            <div class="rest__img-block swiper-slide">
+                                <img width="293" height="233" src="img/contactsSlider/slide1.jpg" alt="">
+                            </div>
+                            <div class="rest__img-block swiper-slide">
+                                <img width="293" height="233" src="img/contactsSlider/slide2.jpg" alt="">
+                            </div>
+                            <div class="rest__img-block swiper-slide">
+                                <img width="293" height="233" src="img/contactsSlider/slide4.jpg" alt="">
+                            </div>
+                        </div>
+                        <button class="bron__stol">Забронировать стол</button>
+                        <a href="#" class="zakaz__dostavki">Заказать доставку</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="rest__item">
+                <h3><span>THESTOLL</span> Пицца & Street Food</h3>
+                <div class="rest__item-inner">
+                    <div class="rest__item-left__content">
+                        <p>Новые блюда от талантливых шеф-поваров, сорта пенного из разных уголков мира, эксклюзивные вина от сомелье и сервис, который мы стараемся приблизить к идеальному!</p>
+                            <a href="#" class="btn__menu rest__btn">Меню и напитки</a>
+                            <span class="address">Кронверкская наб. д.3</span>
+                            <h5>Режим работы</h5>
+                            <span class="working__time">ПН-ЧТ 10:30 - 22:00</span>
+                            <span class="working__time">ПТ-ВС 10:00 - 23:00</span>
+                            <a href="tel:+79319999656" class="rest__item-phone">+7 (931) 9999 656</a>
+                    </div>
+                    <div class="rest__item-right__content">
+                        <div class="rest__item-slider">
+                                <div class="rest__img-block">
+                                    <img width="293" height="233" src="img/about/rest/pizza.png" alt="">
+                                </div>
+                                <div class="rest__img-block">
+                                    <img width="293" height="233" src="img/kronverka/slide1.jpg" alt="">
+                                </div>
+                                <div class="rest__img-block">
+                                    <img width="293" height="233" src="img/kronverka/slide2.jpg" alt="">
+                                </div>
+                                <div class="rest__img-block">
+                                    <img width="293" height="233" src="img/kronverka/slide3.jpg" alt="">
+                                </div>
+                        </div>
+                        
+                        <a href="#" class="zakaz__dostavki">Заказать доставку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="logo"><img src="img/logo.svg" alt="logoImg"></a>
+            <nav>
+                <ul class="footer__menu">
+                    <li class="menu__list-item--footer"><a href="#">О нас</a></li>
+                    <li class="menu__list-item--footer"><a href="#">Анонсы</a></li>
+                    <li class="menu__list-item--footer"><a href="#">Рестораны</a></li>
+                    <li class="menu__list-item--footer"><a href="#">Акции</a></li>
+                    <li class="menu__list-item--footer"><a href="#">Программа лояльности</a></li>
+                    <li class="menu__list-item--footer"><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="footer__social">
+                <a href="#" class="social__link"><img src="img/social/telegram.svg" alt=""></a>
+                    <a href="#" class="social__link"><img src="img/social/vk.svg" alt=""></a>
+                    <a href="#" class="social__link"><img src="img/social/phone.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
